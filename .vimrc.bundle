@@ -22,6 +22,12 @@ if has('vim_starting')
   " visually indent guide
   NeoBundle 'nathanaelkane/vim-indent-guides'
 
+  " vimを立ち上げたときに、自動的にvim-indent-guidesをオンにする
+  "let g:indent_guides_enable_on_vim_startup = 1
+  "set ts=4 sw=4 et
+  "let g:indent_guides_start_level = 2
+  "let g:indent_guides_guide_size = 1
+
   " XMLとかHTMLとかの編集機能を強化する
   NeoBundle 'xmledit'
 
@@ -162,8 +168,14 @@ if has('vim_starting')
   " vim-ruby : VimでRubyを扱う際の最も基本的な拡張機能
   NeoBundle 'vim-ruby/vim-ruby'
 
+  " Ruby向けにendを自動挿入してくれる
+  NeoBundle 'tpope/vim-endwise'
+
   " rails.vim : rails的なアレ
   NeoBundle 'tpope/vim-rails'
+
+  " ログファイルを色づけしてくれる
+  NeoBundle 'vim-scripts/AnsiEsc.vim'
 
   " Pydiction : Python用の入力補完
   NeoBundle 'Pydiction'
